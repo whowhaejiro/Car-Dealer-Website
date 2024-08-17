@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="home-header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <a href="login.html"><i class='bx bxs-user'></i></a>
+            <a href="#"><i class='bx bxs-cart'></i></a>
+            <div class='bx bx-menu-alt-right' id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="home-container" id="home-container">
+        <div class="home-content">
+            <div class="home-text">
+                <p>Find cars for sale and for rent near you </p>
+                <h1>Find Your Dream Car</h1>
+            </div>
+
+            <h3 class="home-h3">Quick Search</h3>
+            <div class="wrapper">
+                <form action="" id="carsearchform">
+                    <div id="make">
+                        <label for="make">Make</label>
+                        <select name="" id="make" onchange="showYears()">
+                            <option value="" disable selected>Select Make</option>
+                            <option value="Audi">Audi</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Vokswagen">Vokswagen</option>
+                            <option value="McLaren">McLaren</option>
+                        </select>
+                    </div>
+
+                    <div id="years">
+                        <label for="years">Year of Manufacture</label>
+                        <select name="" id="year">
+                            <option value="" disable selected>Select Year</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </select>
+                    </div>
+
+                    <div id="budget">
+                        <label for="budget">Budget in $</label>
+                        <input type="number" id="budget" placeholder="Enter Your Budget">
+                    </div>
+
+                    <button type="button" onclick="searchCars()">Search</button>
+                </form>
+            </div>
+
+            <div class="home-image">
+                <img src="images/McLaren 2 modified (1).png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="container-title">Browse by Type</h2>
+        <div class="container-boxes">
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="images/SUV.png" width="70px" alt="">
+                </div>
+                <div class="container-text">
+                    <p>SUV</p>
+                </div>
+            </div>
+    
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="images/sedan.png" width="70px" alt="">
+                </div>
+                <div class="container-text">
+                    <p>SEDAN</p>
+                </div>
+            </div>
+    
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="images/Coupe.png" width="70px" alt="">
+                </div>
+                <div class="container-text">
+                    <p>COUPE</p>
+                </div>
+            </div>
+    
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="images/Convertible.png" width="70px" alt="">
+                </div>
+                <div class="container-text">
+                    <p>CONVERTIBLE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories-container">
+        <div class="center-text">
+            <h2>Most Sold Cars</h2>
+        </div>
+
+        <div class="categories-content">
+            <div class="content-box">
+                <img src="images/Benz.png" width="100px" alt="">
+                <h3>Mercedes Benz</h3>
+                <p>10k Sales</p>
+            </div>
+
+            <div class="content-box">
+                <img src="images/toyota.png" width="100px" alt="">
+                <h3>Toyota</h3>
+                <p>8k Sales</p>
+            </div>
+
+            <div class="content-box">
+                <img src="images/Honda.png" width="100px" alt="">
+                <h3>Honda</h3>
+                <p>5k Sales</p>
+            </div>
+
+            <div class="content-box">
+                <img src="images/VW.png" width="100px" alt="">
+                <h3>Volkswagen</h3>
+                <p>2k Sales</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
